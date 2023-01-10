@@ -9,19 +9,27 @@
 			padding: 0;
 			background: #eee;
 		}
-		
+		.header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		.header h1 {
+			margin: 0;
+		}
 		.navbar {
 			display: flex;
 			flex-direction: row;
-			align-items: center;
-			color: black;
-			margin-left:550px;
-			
+			background-color: white;
+			color: white;
+			padding: 10px;
+			padding-left: 550px;
 		}
 		.navbar a {
 			color: black;
 			text-decoration: none;
-			margin:20px;
+			margin: 10px;
 		}
 		.navbar a:hover {
 			color: lightgrey;
@@ -31,7 +39,6 @@
 			flex-wrap: wrap;
 			justify-content: space-around;
 			padding: 20px;
-			padding-top:80px;
 		}
 		.card {
 			background-color: white;
@@ -61,39 +68,72 @@
 			color: white;
 			padding: 20px;
 			text-align: center;
+			margin-top: 50px;
 		}
-		.head{
-		  padding-top: 50px;
+		table{
+		  width: 100%;
+		  font-size: 20px;
+		  margin-top: 50px;
 		}
-		@media screen and (max-width:400px){
-		  .navbar{
-		    margin-left: 50px;
-		  }
-		  
-		}
+  tr,th,td{
+    text-align: left;
+    border: 1px solid #333;
+		border-collapse: collapse;
+  }
+  #year{
+    width:20%;
+  }
+  .info {
+    font-size: 15pt;
+    	display: flex;
+		
+  }
+
+  .act{
+   border: 1px solid blue;
+   padding: 10px;
+   border-radius: 10%;
+   background: blue;
+   color:#ffff;
+   width: 100px;
+   margin-left: 10px;
+  }
+  .act a {
+    color:white;
+  }
+  @media screen and (max-width:400px){
+    .navbar{
+      padding-left:10px;
+    }
+  }
+  
+  
 	</style>
 </head>
 <body>
-	
 	<div class="navbar">
-		<a href="#">Home</a>
+		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
 		<a href="portfolio.html">Portfolio</a>
 		<a href="contact.html">Contact</a>
 	</div>
-	<div class="main">
-	  <div class="head">
-	   
-	  <h1>Iam Jelay Kulot</h1>
-	  <p1>balajajajajja</p1
-	  </div>
-		<div class="card">
-			<img src="img2.jpeg" alt="Image 2">
+<div class="portfolio">
+  <h1>My Portfolio</h1>
+  
+<div class="act">
+  <h2>Activity 1</h2>
+
+<a href="Calculator.txt">View</a>
+  
+</div>
+  
+  
+</div>
 
 
-	</div>
-	</div>
+
 	
 </body>
-</html>
 
+</html>
+	
